@@ -10,10 +10,11 @@ url = ''
 url_list_column = [
     [
         sg.Text("Enter URL:"),
-        sg.In(size=(25,1),enable_events=True,key="-URL-"),
+        sg.In(size=(70,1),enable_events=True,key="-URL-"),
         sg.Button("Go"),
         ],
     [
+        sg.Text("Select Scanner:"),
         sg.Combo(
             ["Web Crawler",
              "XSS Vulnerability Scanner",
